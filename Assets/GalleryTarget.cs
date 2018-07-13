@@ -23,7 +23,7 @@ public class GalleryTarget : NetworkBehaviour
     [Server]
     void Start()
     {
-        Invoke("DestroyObject", 2);
+        Invoke("DestroyObject", lifetime);
     }
 
     public void DestroyObject()

@@ -20,10 +20,10 @@ public class GalleryTarget : NetworkBehaviour
         m_InteractiveItem.OnDown -= HandleDown;
     }
 
-    [Server]
+    [ServerCallback]
     void Start()
     {
-        Invoke("DestroyObject", 2);
+        Invoke("DestroyObject", lifetime);
     }
 
     public void DestroyObject()

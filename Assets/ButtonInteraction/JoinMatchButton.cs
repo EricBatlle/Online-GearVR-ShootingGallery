@@ -8,8 +8,7 @@ public class JoinMatchButton : GearButton {
     [SerializeField] private LobbyServerEntry m_lse;
 
     protected override void HandleDown()
-    {
-        print(m_lse.match.networkId.ToString());
+    {        
         m_lse.JoinMatch(m_lse.match.networkId,m_lse.lobbyManager);
     }
 }

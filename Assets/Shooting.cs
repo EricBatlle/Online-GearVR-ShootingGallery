@@ -83,7 +83,7 @@ public class Shooting : NetworkBehaviour {
         {
             // Set the end position for our laser line 
             m_laserLine.SetPosition(1, hit.point);
-            print(hit.transform.gameObject.name);
+            //print(hit.transform.gameObject.name);
             if (hit.transform.gameObject.tag == "Target")
             {
                 GalleryTarget target = hit.transform.gameObject.GetComponent<GalleryTarget>();
@@ -100,7 +100,6 @@ public class Shooting : NetworkBehaviour {
 
     private IEnumerator ShotEffect()
     {
-
         // Turn on our line renderer
         m_laserLine.enabled = true;
 

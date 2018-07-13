@@ -14,7 +14,7 @@ public class GalleryController : NetworkBehaviour {
         InvokeRepeating("SpawnTarget",spawnTime,spawnTime);
     }
 
-    [Server]
+    [ServerCallback]
     private void SpawnTarget()
     {
         // Find a random index between zero and one less than the number of spawn points.

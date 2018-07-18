@@ -1,7 +1,3 @@
-# Online-GearVR-ShootingGallery
-2GearVR + ShootingGallery = VR Online Mini-game!
-
-
 INSTRUCTIONS
 ==========
 
@@ -28,7 +24,3 @@ Virtual Reality -> Tap on the Headset
 If you shoot on the target, you'll earn one point.
 
 Make more points than your friend!
-
-2GearVR + ShootingGallery = VR Online Mini-game!
-
-Unity 2017.3.1f1

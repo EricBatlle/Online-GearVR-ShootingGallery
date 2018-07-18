@@ -9,14 +9,14 @@ INSTRUCTIONS
 -------
 If you want to play on different devices (viable on PC and GearVR):
 
-    * Execute 2 instances of the game (one for device, in each device)
-    * 1st Instance, click on CREATE button
-    * 2nd Instance, click on LIST SERVERS button
-    * 2nd Instance, click on JOIN button
-    * 1st and 2nd Instance, click on JOIN button
+    - Execute 2 instances of the game (one for device, in each device)
+    - 1st Instance, click on CREATE button
+    - 2nd Instance, click on LIST SERVERS button
+    - 2nd Instance, click on JOIN button
+    - 1st and 2nd Instance, click on JOIN button
 
  If you want to play on the same device (only viable on PC):
- 
+
     - Execute 2 instances of the game
     - 1st Instance, click on PLAY AND HOST button
     - 2nd Instance, click on JOIN button
@@ -24,13 +24,14 @@ If you want to play on different devices (viable on PC and GearVR):
 
 ·Game:
 ------
-PC -> Right-Click to Shoot
-Virtual Reality -> Tap on the Headset
+PC: Right-Click to Shoot
 
-If you shoot on the target, you'll earn one point.
+Virtual Reality: Tap on the Headset
 
-Make more points than your friend!
+######If you shoot on the target, you'll earn one point.
 
-2GearVR + ShootingGallery = VR Online Mini-game!
+######Make more points than your friend!
 
-Unity 2017.3.1f1
+######2GearVR + ShootingGallery = VR Online Mini-game!
+
+######Unity 2017.3.1f1

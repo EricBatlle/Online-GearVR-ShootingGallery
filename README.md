@@ -8,11 +8,11 @@ INSTRUCTIONS
 ·Lobby:
 -------
 If you want to play on different devices (viable on PC and GearVR):
-    + Execute 2 instances of the game (one for device, in each device)
-    + 1st Instance, click on CREATE button
-    + 2nd Instance, click on LIST SERVERS button
-    + 2nd Instance, click on JOIN button
-    + 1st and 2nd Instance, click on JOIN button
+    - Execute 2 instances of the game (one for device, in each device)
+    - 1st Instance, click on CREATE button
+    - 2nd Instance, click on LIST SERVERS button
+    - 2nd Instance, click on JOIN button
+    - 1st and 2nd Instance, click on JOIN button
 
  If you want to play on the same device (only viable on PC):
     + Execute 2 instances of the game

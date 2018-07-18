@@ -16,6 +16,7 @@ If you want to play on different devices (viable on PC and GearVR):
     * 1st and 2nd Instance, click on JOIN button
 
  If you want to play on the same device (only viable on PC):
+ 
     - Execute 2 instances of the game
     - 1st Instance, click on PLAY AND HOST button
     - 2nd Instance, click on JOIN button

@@ -5,8 +5,9 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using VRStandardAssets.Utils;
 
-public class Shooting : NetworkBehaviour {
+public class Shooting : NetworkBehaviour{
 
+    #region Private Editor Variables
     [Header("VR")]
     [SerializeField] private VREyeRaycaster m_EyeRaycaster;             // Used to detect whether the gun is currently aimed at something.
     [SerializeField] private VRInput m_VRInput;                         // Used to catch the VR input actions
@@ -15,17 +16,22 @@ public class Shooting : NetworkBehaviour {
     [Header("Ray Position")]
     [SerializeField] private Camera m_fpsCam;                             // Holds a reference to the first person camera
     [SerializeField] private LineRenderer m_laserLine;                    // Reference to the LineRenderer component which will display our laserline
+    #endregion
 
+    #region Public Variables
     [Header("Shoot Attributes")]
     public int gunDamage = 1;                                           // Set the number of hitpoints that this gun will take away from shot objects with a health script
     public float fireRate = 0.25f;                                      // Number in seconds which controls how often the player can fire
     public float weaponRange = 50f;                                     // Distance in Unity units over which the player can fire
-    public float hitForce = 100f;                                       // Amount of force which will be added to objects with a rigidbody shot by the player    
+    public float hitForce = 100f;                                       // Amount of force which will be added to objects with a rigidbody shot by the player        
+    #endregion
 
+    #region Private Variables
     private Text m_scoreLocalText;                                      // Reference to canvas remote score text
-    private Text m_scoreRemoteText;                                     // Reference to canvas remote score text
-    private WaitForSeconds m_shotDuration = new WaitForSeconds(0.07f);    // WaitForSeconds object used by our ShotEffect coroutine, determines time laser line will remain visible            
+    private Text m_scoreRemoteText;                                     // Reference to canvas remote score text    
     private int m_score = 0;                                            // Actual player score
+    private WaitForSeconds m_shotDuration = new WaitForSeconds(0.07f);  // WaitForSeconds object used by our ShotEffect coroutine, determines time laser line will remain visible            
+    #endregion
 
     private void Start()
     {
@@ -38,6 +44,7 @@ public class Shooting : NetworkBehaviour {
             m_VRInput.OnDown += Shoot;
         }
     }
+
     private void OnDisable()
     {
         if (isLocalPlayer)        
@@ -98,6 +105,7 @@ public class Shooting : NetworkBehaviour {
         }
     }
 
+    //Turn our laser line on and off
     private IEnumerator ShotEffect()
     {
         // Turn on our line renderer
@@ -111,6 +119,7 @@ public class Shooting : NetworkBehaviour {
     }
     #endregion
 
+    //Update Score Panel
     private void UpdateScore()
     {
         Text text = (isLocalPlayer) ? m_scoreLocalText : m_scoreRemoteText;

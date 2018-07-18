@@ -125,19 +125,19 @@ GameObject:
   - component: {fileID: 81005483780532804}
   - component: {fileID: 114280252764302594}
   - component: {fileID: 114343637202691406}
-  - component: {fileID: 114930320145586062}
-  - component: {fileID: 114789139579156612}
   - component: {fileID: 114928230279770254}
   - component: {fileID: 114680939199769566}
   - component: {fileID: 114571145806110006}
   - component: {fileID: 114770408439438278}
   - component: {fileID: 114589139449832134}
-  - component: {fileID: 114134623050809250}
+  - component: {fileID: 114173449236688036}
+  - component: {fileID: 114346135013433950}
+  - component: {fileID: 114789139579156612}
+  - component: {fileID: 120837579010259892}
   - component: {fileID: 114050985563350828}
   - component: {fileID: 114185118858719496}
-  - component: {fileID: 120837579010259892}
   m_Layer: 0
-  m_Name: MainCamera
+  m_Name: MainCamera_Player
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
     i15: 130
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &114134623050809250
+--- !u!114 &114173449236688036
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -261,10 +261,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1921331498874612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32f8f6763ea7fbb42a22c301517702f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d9fb15444cdbdd4f88f20ee79dd3a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensivility: 0.5
+  m_Canvas: {fileID: 223332281102678598}
+  m_reticleBck: {fileID: 114379854063392808}
+  m_color: {r: 0.9137255, g: 0.627451, b: 0.11764706, a: 0.3137255}
+  m_lr: {fileID: 120837579010259892}
 --- !u!114 &114185118858719496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,6 +323,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DoubleClickTime: 0.3
   m_SwipeWidth: 0.3
+--- !u!114 &114346135013433950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921331498874612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0775a3dac6af634e8fe5774190ae88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensivility: 0.5
 --- !u!114 &114367800673355508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -522,22 +537,6 @@ MonoBehaviour:
   m_HideOnStart: 0
   m_Selection: {fileID: 114454235776553112}
   m_VRInput: {fileID: 114343637202691406}
---- !u!114 &114930320145586062
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921331498874612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c18b880c62744449e7f9ea93ee01f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Canvas: {fileID: 223332281102678598}
-  m_reticleBck: {fileID: 114379854063392808}
-  m_color: {r: 0.9137255, g: 0.627451, b: 0.11764706, a: 0.3137255}
-  m_lr: {fileID: 120837579010259892}
-  m_scoreRemoteText: {fileID: 0}
 --- !u!114 &114962260702100880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -573,7 +572,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: dda6e6f5834a82344bf2a42ebd4c2d7b, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

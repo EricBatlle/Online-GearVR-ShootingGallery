@@ -28,10 +28,10 @@ PC: Right-Click to Shoot
 
 Virtual Reality: Tap on the Headset
 
-######If you shoot on the target, you'll earn one point.
+###### If you shoot on the target, you'll earn one point.
 
-######Make more points than your friend!
+###### Make more points than your friend!
 
-######2GearVR + ShootingGallery = VR Online Mini-game!
+###### 2GearVR + ShootingGallery = VR Online Mini-game!
 
-######Unity 2017.3.1f1
+###### Unity 2017.3.1f1
